@@ -1,0 +1,5 @@
+*trasient response
+.include ../AE01.19.09.001.cir
+.param VSUPPLY=5
+.tran 0 100m 0 uic
+

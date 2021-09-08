@@ -1,0 +1,15 @@
+.title KiCad schematic
+.include "models/C2012X7R2A104K125AA_p.mod"
+.include "models/MAX4719.FAM"
+XU1 VDD /NO1 /OUT1 /CTRL1 /NC1 0 /NC2 /CTRL2 /OUT2 /NO2 MAX4719
+XU2 VDD 0 C2012X7R2A104K125AA_p
+V1 VDD 0 {VSUPPLY}
+V2 /CTRL1 0 pulse(0 5 18m 10n 10n 5m 10m)
+V4 /NC2 0 sine(2 0.5 1k)
+R1 /OUT2 0 100k
+V3 /CTRL2 0 pulse(0 5 15m 10n 10n 5m 10m)
+V5 /NO2 0 sine(2 1.5 2k)
+V6 /NC1 0 sine(3 0.5 1.5k)
+V7 /NO1 0 sine(3 1 2.5k)
+R2 /OUT1 0 100k
+.end
